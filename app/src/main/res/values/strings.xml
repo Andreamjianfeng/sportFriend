@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Montion</string>
+    <string name="title_activity_first">FirstActivity</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_dailer">DailerActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_circle">CircleActivity</string>
+    <string name="title_activity_people">PeopleActivity</string>
+    <string name="title_activity_information">InformationActivity</string>
+    <string name="title_activity_positioning">PositioningActivity</string>
+    <string name="title_activity_about_me">AboutMeActivity</string>
+</resources>

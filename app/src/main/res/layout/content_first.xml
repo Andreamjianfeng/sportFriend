@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.guet.jason.sportsfriend.FirstActivity"
+    tools:showIn="@layout/activity_first">
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <Button
+        android:text="发布"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/sign3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#ffffff"
+        android:id="@+id/to_release" />
+
+    <Button
+        android:text="推荐"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/sign3"
+        android:layout_alignTop="@+id/to_release"
+        android:textColor="#ffffff"
+        android:layout_toStartOf="@+id/to_release"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/to_recommended" />
+
+    <Button
+        android:text="参与"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:textColor="#ffffff"
+        android:background="@mipmap/sign3"
+        android:layout_alignTop="@+id/to_release"
+        android:layout_toEndOf="@+id/to_release"
+        android:layout_marginStart="12dp"
+        android:id="@+id/to_participation" />
+</RelativeLayout>

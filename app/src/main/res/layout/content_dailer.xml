@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_dailer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_dailer">
+<ScrollView
+    android:layout_width="match_parent"
+    android:id="@+id/dai_lin"
+    android:layout_below="@+id/add_icon"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/edi">
+
+            <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="时间:"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textColor="#47424c"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/add_time"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edi">
+
+            <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="地点:"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textColor="#47424c"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/add_address"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edi">
+                <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类型:"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#47424c"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/add_tymp"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+             android:focusable="true"
+             android:focusableInTouchMode="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edi">
+                <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人数:"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#47424c"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/add_num"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:digits="0123456789."
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/bao_or_fa"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edi">
+                <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已报名:"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#47424c"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/yi_bao_ming"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+             android:focusable="true"
+             android:focusableInTouchMode="true"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edi">
+                <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可报名:"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#47424c"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/ke_bao_ming"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edi">
+
+            <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="活动简介:"
+                android:layout_marginLeft="5dp"
+                android:textColor="#47424c"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/add_content"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/relerse_ok"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/sign3"
+            android:text="发布"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/add_icon"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#bcbcbc"
+        android:orientation="vertical">
+
+        <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+            android:id="@+id/text_dai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_icon_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="添加活动场馆图片"
+            android:textColor="#60546d" />
+
+        <ImageView
+            android:id="@+id/add_icon_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/add1" />
+
+        <ImageView
+            android:id="@+id/safe_icon"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/dailer_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:id="@+id/dailer_dot_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:gravity="right" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

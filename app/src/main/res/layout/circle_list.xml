@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/cir_list_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            app:riv_border_color="@color/colorPrimary"
+            app:riv_border_width="2dip"
+            app:riv_corner_radius="30dip"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            app:riv_tile_mode="clamp"
+            android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="18dp"
+            android:orientation="vertical">
+
+            <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                android:id="@+id/cir_list_name"
+                android:layout_width="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/text"
+                android:layout_height="wrap_content" />
+
+            <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/cir_list_im"
+                android:textColor="@color/text"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/cir_list_my_say"
+        android:textColor="@color/text"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" />
+    <com.lzy.ninegrid.NineGridView
+        android:id="@+id/nineGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="14dp"
+        app:ngv_gridSpacing="4dp"
+        app:ngv_maxSize="9"
+        app:ngv_mode="grid"
+        app:ngv_singleImageRatio="1"
+        app:ngv_singleImageSize="250dp"/>
+</LinearLayout>

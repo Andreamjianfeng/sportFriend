@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_positioning"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.guet.jason.sportsfriend.PositioningActivity"
+    tools:showIn="@layout/activity_positioning">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimaryDark">
+
+        <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="桂林"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shapebutton">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/search" />
+
+            <EditText
+                android:id="@+id/positioning_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:hint="请输入地址" />
+        </LinearLayout>
+        <Button
+            android:layout_width="80dp"
+            android:id="@+id/start_position"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shapebutton"
+            android:layout_marginRight="10dp"
+            android:text="定位"
+            android:textColor="@color/text"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:id="@+id/positioning_my_address"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:src="@drawable/reposition"
+                android:layout_height="25dp" />
+            <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/text"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:text="重新定位"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/setting_toolbar"
+            style="@style/use_Toolbar" />
+
+        <LinearLayout
+            android:id="@+id/lo_icon"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="36dp"
+                android:layout_weight="1"
+                android:text="头像"
+                android:textColor="@color/text"
+                android:textSize="20dp" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/avatar"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="16dp"
+                app:riv_corner_radius="30dip"
+                app:riv_border_width="2dip"
+                app:riv_border_color="@color/colorPrimary"
+                app:riv_mutate_background="true"
+                app:riv_tile_mode="clamp"
+                app:riv_oval="true"
+                android:elevation="4dp" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:elevation="4dp"
+                android:src="@drawable/people_go" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:src="@drawable/hengxian" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="24dp"
+                android:text="昵称"
+                android:textColor="@color/text"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/set_my_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:text="个人介绍:"
+                android:textColor="@color/text"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/set_my_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_setting"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/infobtyone"
+            android:text="保存"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

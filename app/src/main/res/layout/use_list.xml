@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#eaeaea"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:background="#cecece"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="30dp">
+        <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+            android:layout_width="match_parent"
+            android:id="@+id/list_tv"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+        <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+            android:layout_width="match_parent"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/list_address"
+            android:text="哈哈哈"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+        <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+            android:layout_width="70dp"
+            android:id="@+id/list_mun"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:text="哈哈哈"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="#cecece"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="80dp">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/list_img"
+            android:layout_height="75dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:descendantFocusability="blocksDescendants"
+            android:background="@drawable/conten"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/con_tv"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="6dp"
+        android:id="@+id/list_start_time"
+        android:layout_gravity="right"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:textSize="15sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="6dp"
+        android:id="@+id/list_end_time"
+        android:textSize="15sp"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#cecece"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.guet.jason.sportsfriend.FirstActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/first_positioning"
+                android:src="@mipmap/positioning"
+                android:layout_height="wrap_content" />
+            <com.guet.jason.sportsfriend.Xiu.MyFrontTextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:id="@+id/first_top_text"
+                android:text="定位中..."
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/message_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="right"
+                android:scaleType="centerInside"
+                android:layout_marginRight="8dp"
+               android:src="@mipmap/message"
+                android:background="#00000000"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_first" />
+    <android.support.design.internal.ForegroundLinearLayout
+
+        android:layout_gravity="bottom|center"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            >
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/cycleBtn"
+                android:src="@mipmap/cycle1"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圈子"
+                android:layout_gravity="bottom|center_horizontal"
+                android:id="@+id/cycleTV"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            >
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/sportBtn"
+                android:src="@mipmap/sport1"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运动"
+                android:id="@+id/sportTV"
+                android:layout_gravity="bottom|center_horizontal"
+                android:textSize="8dp"
+                android:textColor="#fff"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            >
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:scaleType="centerInside"
+                android:id="@+id/infobty"
+                android:src="@mipmap/infor1"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="资讯"
+                android:layout_gravity="bottom|center_horizontal"
+                android:id="@+id/InforTV"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            >
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/personBtn"
+                android:src="@mipmap/person1"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:background="#00000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人"
+                android:layout_gravity="bottom|center_horizontal"
+                android:id="@+id/personTV"
+                android:textColor="#fff"
+                android:textSize="8dp" />
+        </LinearLayout>
+    </android.support.design.internal.ForegroundLinearLayout>
+</android.support.design.widget.CoordinatorLayout>
