@@ -64,8 +64,6 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
     private LocationClient locationClient;
     private static final double EARTH_RADIUS = 6378137;//赤道半径(单位m)
     private final static int CHANGE = 1;
-    private Marker mMarkerA;
-    private Button release, recommended, participation;
     //右边按钮
     private MyLocationConfiguration.LocationMode currentMode;
     private ImageButton messageButton, cycleBtn, personBtn, infobty;
@@ -74,7 +72,6 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
     private Boolean mar_list = true, add_mark = true;
     boolean isFirstLoc = true;// 是否首次定位
     private boolean backFlag = false;
-    private Toolbar toolbar;
     @SuppressLint("HandlerLeak")
     private static Handler handler = new Handler() {
         @SuppressLint("SetTextI18n")
@@ -97,7 +94,7 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_first);
         getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         init_view();
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
         mMapView = (MapView) findViewById(R.id.bmapView);
@@ -132,9 +129,9 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
 
     private void init_view() {
 
-        release = (Button) findViewById(R.id.to_release);
-        recommended = (Button) findViewById(R.id.to_recommended);
-        participation = (Button) findViewById(R.id.to_participation);
+        Button release = (Button) findViewById(R.id.to_release);
+        Button recommended = (Button) findViewById(R.id.to_recommended);
+        Button participation = (Button) findViewById(R.id.to_participation);
         messageButton = (ImageButton) findViewById(R.id.message_button);
         first_positioning = (ImageView) findViewById(R.id.first_positioning);
         first_top_text = (TextView) findViewById(R.id.first_top_text);
@@ -268,7 +265,6 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
                             MarkerOptions ooA = new MarkerOptions().position(latLng).icon(bitmapDescriptor)
                                     .zIndex(9).draggable(false).alpha(0.6f);
                             ooA.animateType(MarkerOptions.MarkerAnimateType.grow);
-                            mMarkerA = (Marker) (baiduMap.addOverlay(ooA));
                         }
                     }
                 }
