@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SportsFriend.iml" filepath="$PROJECT_DIR$/SportsFriend.iml" />
+      <module fileurl="file://D:\GitHub\sportFriend\SportsFriend.iml" filepath="D:\GitHub\sportFriend\SportsFriend.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\GitHub\sportFriend\app\app.iml" filepath="D:\GitHub\sportFriend\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sportFriend.iml" filepath="$PROJECT_DIR$/sportFriend.iml" />
     </modules>
   </component>
 </project>

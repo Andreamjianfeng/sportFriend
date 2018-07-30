@@ -36,18 +36,16 @@ public class WelcomActivity extends AppCompatActivity {
     private ViewPager vp;
     private EditText username;
     private EditText password;
-    private Button signButton;
-    private Button signUpButton;
     private List<Fragment> fragments;
     private ProgressBar welcomeProgressBar;
 
     private void assignViews() {
-        vp = (ViewPager) findViewById(R.id.vp);
-        username = (EditText) findViewById(R.id.et_username);
-        password = (EditText) findViewById(R.id.et_password);
-        signButton = (Button) findViewById(R.id.signBtn);
-        signUpButton = (Button) findViewById(R.id.signupBtn);
-        welcomeProgressBar= (ProgressBar) findViewById(R.id.welcomeProgressBar);
+        vp = findViewById(R.id.vp);
+        username = findViewById(R.id.et_username);
+        password = findViewById(R.id.et_password);
+        Button signButton = findViewById(R.id.signBtn);
+        Button signUpButton = findViewById(R.id.signupBtn);
+        welcomeProgressBar= findViewById(R.id.welcomeProgressBar);
         signButton.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
@@ -113,7 +111,7 @@ public class WelcomActivity extends AppCompatActivity {
     private class MyPageAdapter extends FragmentPagerAdapter {
 
 
-        public MyPageAdapter(FragmentManager fm) {
+        MyPageAdapter(FragmentManager fm) {
             super(fm);
         }
 
@@ -140,7 +138,7 @@ public class WelcomActivity extends AppCompatActivity {
         /**
          * 根据页面不同动态改变红点和在最后一页显示立即体验按钮
          *
-         * @param position
+         * @param position 位置
          */
         @Override
         public void onPageSelected(int position) {
@@ -154,7 +152,7 @@ public class WelcomActivity extends AppCompatActivity {
     }
 
     private void attemptLogin() {
-        if (mAuthTask == true) {
+        if (mAuthTask) {
             return;
         }
 
@@ -218,7 +216,7 @@ public class WelcomActivity extends AppCompatActivity {
     }
 
     private void attemptRegister() {
-        if (mAuthTask == true) {
+        if (mAuthTask) {
             return;
         }
 
