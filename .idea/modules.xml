@@ -4,10 +4,8 @@
     <modules>
       <module fileurl="file://D:\GitHub\sportFriend\SportsFriend.iml" filepath="D:\GitHub\sportFriend\SportsFriend.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\GitHubProject\sportFriend\app\app.iml" filepath="D:\GitHubProject\sportFriend\app\app.iml" />
       <module fileurl="file://D:\GitHub\sportFriend\app\app.iml" filepath="D:\GitHub\sportFriend\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/sportFriend.iml" filepath="$PROJECT_DIR$/sportFriend.iml" />
-      <module fileurl="file://D:\GitHubProject\sportFriend\sportFriend.iml" filepath="D:\GitHubProject\sportFriend\sportFriend.iml" />
     </modules>
   </component>
 </project>

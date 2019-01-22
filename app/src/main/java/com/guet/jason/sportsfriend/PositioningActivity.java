@@ -23,8 +23,9 @@ public class PositioningActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_positioning);
-        Toolbar toolbar = findViewById(R.id.positioning_toolbar);
-        toolbar.setTitle("autel");
+
+        Toolbar toolbar =  findViewById(R.id.positioning_toolbar);
+        toolbar.setTitle("Autel");
         setSupportActionBar(toolbar);
         toolbar.setNavigationIcon(R.mipmap.back1);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
@@ -36,6 +37,7 @@ public class PositioningActivity extends AppCompatActivity {
         positioning_my_address = findViewById(R.id.positioning_my_address);
         start_position = findViewById(R.id.start_position);
         positioning_address = findViewById(R.id.positioning_address);
+
         positioning_my_address.setText(App.location_address);
         start_position.setOnClickListener(new View.OnClickListener() {
             @Override
